@@ -5,7 +5,7 @@ module.exports = function (conf) {
   var types = conf.types;
 
   function replaceSVG (filename) {
-    return types.expressionStatement(types.stringLiteral('#' + filename.replace('.svg')))
+    return types.expressionStatement(types.stringLiteral('#' + filename.replace('.svg', '')))
   }
 
   return {
